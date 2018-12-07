@@ -8,6 +8,7 @@ package cn.tjsanshao.config;
  *
  **/
 
+import cn.tjsanshao.annotation.ExcludeFromComponentScan;
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -26,7 +27,8 @@ public class RibbonConfig {
     }
 
     //默认情况下，Ribbon使用轮询算法，注入IRule可以替换掉默认算法
-    @Bean
+    //注意，一旦在这里注入了IRule，那么所有的微服务访问都将使用这里指定的算法
+    //@Bean
     public IRule rule() {
         return new RandomRule();
     }
