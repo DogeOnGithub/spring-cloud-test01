@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/test01-server/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-test01-service-hello/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-test01-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-test01-feign/pom.xml" />
       </list>
     </option>
   </component>
